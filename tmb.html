@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de gasto de calorias</title>
+    <link rel="stylesheet" href="tmb.css">
+</head>
+<body>
+    <section class="tmbtitulo">
+        <h1>Calculadora do <abbr title="A taxa metabólica basal pode ser entendida como a energia mínima que o corpo necessita para manter seu funcionamento.">TMB</abbr></h1>
+    
+        <p>Informe seu sexo:
+        <input type="radio"name="radsex"id="mas" checked>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="radsex" id="fem">
+        <label for="fem">Feminino</label>
+
+        <p>Digite sua altura (cm):
+        <input type="number"id="altura">
+        
+        <p>Digite seu peso (kg):
+        <input type="number" id="peso">
+
+        <p>Digite sua idade(somente números):
+            <input type="number" id="idade">
+
+        </p>
+        
+        <p>Qual o seu nível de atividade física?
+                <input type="radio" name="fatorat" id="sedent" checked>
+                <label for="sedentario">Sedentário(1.2)</label>
+
+                <input type="radio" name="fatorat"id="lativo">
+                <label for="levemativo">Levemente Ativo (1.375)</label>
+
+                <input type="radio" name="fatorat" id="modativo" >
+                <label for="modativo">Moderadamente Ativo (1.55)</label>
+                
+                <input type="radio" name="fatorat"id="altamativo">
+                <label for="altamativo">Altamente Ativo (1.725)</label>
+
+                <input type="radio" name="fatorat"id="extativo">
+                <label for="extremativo">Extremamente Ativo (1.9)</label>
+
+                </p>
+            
+        <p>Seu TMB é: 
+        <input type="button"value="Verificar" onclick="verificar()" class="ver">
+        
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+        </section>
+        <footer>Desenvolvido por Adriano Carvalho &copy;</footer>
+        
+</body>
+<script src="tmb.js"></script>
+</html>
